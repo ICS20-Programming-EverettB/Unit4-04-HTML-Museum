@@ -8,12 +8,12 @@
     <meta name="keywords" content="immaculata, ics2o" />
     <meta name="author" content="Everett" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="Movie camera" sizes="180x180" href="https://cdn-icons-png.flaticon.com/512/54/54335.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn-icons-png.flaticon.com/512/54/54335.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn-icons-png.flaticon.com/512/54/54335.png" />
+    <link rel="Science symbol" sizes="180x180" href="https://img.brainkart.com/article/articleTEVa9s13.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://img.brainkart.com/article/articleTEVa9s13.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://img.brainkart.com/article/articleTEVa9s13.png" />
     <link rel="manifest" href="./fav_index/site.webmanifest" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-teal.min.css" />
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.red-deep_orange.min.css" />   
     <link rel="stylesheet" href="./css/style.css" />
     
     <!-- title of page and website-->
@@ -33,7 +33,7 @@
       <main class="mdl-layout__content">
         <center>
          <h1>Museum Entry Fee</h1>
-        <img src="https://www.freeiconspng.com/uploads/movie-icon-22.gif" alt="Moviesymbol" width="333" height="333">
+        <img src="./img/museumpicture.webp" alt="MuseumImage" width="500" height="333">
           
         <!-- texfield for age -->
         <form action="#">
@@ -48,10 +48,11 @@
             <span class="mdl-textfield__error">Input is not an age</span>
           </div>
         </form>
-        <!-- texfield for  -->
+        <!-- texfield for days of the week -->
        <form action="#">
          <label for=museum>Select Day Of The Week:</label>
            <select name="days" id="days">
+            <option value="Dayenter">Enter Day</option>
             <option value="Monday">Monday</option>
             <option value="Tusday">Tusday</option>
             <option value="Wensday">Wensday</option>
@@ -62,7 +63,7 @@
            </select>
       </form>
           
-        <!-- Movie button -->
+        <!-- Museum button -->
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
           onclick="calculate()"

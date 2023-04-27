@@ -4,21 +4,22 @@
 "use strict";
 
 /**
- * This function calculates what movies the user can watch
+ * This function calculates the pay for museum admisstion 
  */
 function calculate () {
   
   // user age input
   let userage = parseFloat(document.getElementById('Uage').value);
-  let days = parseFloat(document.getElementById('days').value);
+  let days = (document.getElementById('days').value);
   let price = ""
-  // If statments for age
+  
+  // If statments for admisstion fee
   if ((userage <=5) || (userage>=95)) {
    
     price = "Free."
    
  }
-  else if (((userage >=12) && (userage<=21)) || ((days== "Thursday") || (days== "Tusday"))) {
+  else if (((userage >=12) && (userage<=21)) || ((days == "Thursday") || (days == "Tusday"))) {
      price = "Discounted price."
   }
    
@@ -26,9 +27,7 @@ function calculate () {
     price = "Regular price."
 }
 
-    
-
-  // output what movies user can watch
+  // output discount
   document.getElementById('movie-display').innerHTML = price 
 
 }
